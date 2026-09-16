@@ -9,6 +9,16 @@ Mục tiêu: Viết câu lệnh điều kiện đúng cú pháp
 # 13-17: "Thiếu niên"
 # 18-64: "Người lớn"
 # >= 65: "Người cao tuổi"
+tuoi=int(input("Tuoi cua ban la: "))
+if tuoi<13:
+    print("Thieu nhi")
+elif tuoi<=17:
+    print("Thieu nien")
+elif tuoi<=64:
+    print("Nguoi lon")
+else:
+    print("Nguoi cao tuoi")
+
 
 
 # TODO 2: Nhập điểm (0-10), xếp loại:
