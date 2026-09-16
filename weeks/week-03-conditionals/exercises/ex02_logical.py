@@ -11,12 +11,28 @@ co_bang_lai = input("Có bằng lái? (y/n): ").lower() == "y"
 khong_say = input("Tỉnh táo? (y/n): ").lower() == "y"
 # Viết if kiểm tra và in kết quả
 
+if tuoi >= 18 and co_bang_lai and khong_say:
+    print("Bạn đủ điều kiện lái xe.")
+else:
+    print("Bạn không đủ điều kiện lái xe.")
 
 # TODO 2: Phân loại tam giác
 # Nhập 3 cạnh a, b, c
 # Kiểm tra: có tạo thành tam giác không? (tổng 2 cạnh > cạnh còn lại)
 # Nếu có: đều, cân, hay thường?
+a = float(input("Cạnh a: "))
+b = float(input("Cạnh b: "))
+c = float(input("Cạnh c: "))
 
+if a + b > c and a + c > b and b + c > a:
+    if a == b == c:
+        print("Tam giác đều.")
+    elif a == b or b == c or a == c:
+        print("Tam giác cân.")
+    else:
+        print("Tam giác thường.")
+else:
+    print("Ba cạnh không tạo thành tam giác.")
 
 # TODO 3: Kiểm tra mật khẩu mạnh
 # Mật khẩu mạnh khi: >= 8 ký tự AND có chữ hoa AND có chữ thường AND có số
