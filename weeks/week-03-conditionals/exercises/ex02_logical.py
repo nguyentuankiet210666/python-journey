@@ -38,7 +38,25 @@ else:
 # Mật khẩu mạnh khi: >= 8 ký tự AND có chữ hoa AND có chữ thường AND có số
 # Gợi ý: dùng any(c.isupper() for c in pw), any(c.islower()...), any(c.isdigit()...)
 
+pw = input("Nhập mật khẩu: ")
+
+if (len(pw) >= 8 and
+    any(c.isupper() for c in pw) and
+    any(c.islower() for c in pw) and
+    any(c.isdigit() for c in pw)):
+    print("Mật khẩu mạnh.")
+else:
+    print("Mật khẩu không đủ mạnh.")
 
 # TODO 4 (Thử thách): FizzBuzz
 # Nhập số n. In "Fizz" nếu chia hết 3, "Buzz" nếu chia hết 5,
-# "FizzBuzz" nếu chia hết cả 3 và 5, ngược lại in số đó
+# "FizzBuzz" nếu chia hết cả 3 và 5, ngược lại in số đo
+n = int(input("Nhập số n: "))
+if n % 3 == 0 and n % 5 == 0:   
+    print("FizzBuzz")
+elif n % 3 == 0:
+    print("Fizz")
+elif n % 5 == 0:
+    print("Buzz")
+else:
+    print(n)
