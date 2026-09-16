@@ -43,3 +43,8 @@ for i in range(1, 11):
 # TODO 4 (Thử thách): Tạo progress bar bằng f-string
 # Nhập phần trăm (0-100)
 # In ra: [████████░░░░░░░░░░░░] 40%
+percentage = int(input("Nhập phần trăm (0-100): "))
+bar_length = 20
+filled_length = int(percentage * bar_length / 100)
+bar = "█" * filled_length + "░" * (bar_length - filled_length)
+print(f"[{bar}] {percentage}%")
