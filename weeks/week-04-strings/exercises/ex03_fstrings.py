@@ -10,6 +10,7 @@ Mục tiêu: Định dạng output đẹp với f-string
 ten = "An"
 tuoi = 20
 diem = 8.567
+print(f"Học sinh {ten}, {tuoi} tuổi, điểm TB: {diem:.2f}")
 
 
 # TODO 2: In bảng cửu chương 5 với cột thẳng hàng
@@ -18,6 +19,10 @@ diem = 8.567
 # 5 x  2 =  10
 # ...
 # 5 x 10 =  50
+
+
+for i in range(1, 11):
+    print(f"5 x {i:>2} = {5 * i:>3}")
 
 
 # TODO 3: In hóa đơn mua hàng đẹp
@@ -32,6 +37,7 @@ diem = 8.567
 # TỔNG CỘNG           70,000
 # ===========================
 # Gợi ý: dùng f"{name:<20}{price:>10,}"
+
 
 
 # TODO 4 (Thử thách): Tạo progress bar bằng f-string
